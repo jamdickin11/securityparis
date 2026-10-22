@@ -7,14 +7,15 @@
     <!-- SEO OPTIMIZATION -->
     <title>Protection Boutique Manifestation Paris | Sécurité Privée Urgence</title>
     <meta name="description" content="Urgence manifestation Paris. Protégez votre commerce contre les pillages et dégradations. Agents de sécurité privée expérimentés. Garantie de remboursement. Places limitées. Contactez-nous sur Telegram.">
-    <meta name="keywords" content="protection boutique manifestation paris, sécurité privée urgence paris, agent de sécurité anti-émeute paris, gardiennage commerce pillage paris, sécurité manifestation 24 octobre, protection vitrine paris">
+    <meta name="keywords" content="protection boutique manifestation paris, sécurité privée urgence paris, agent de sécurité anti-émeute paris, gardiennage commerce pillage paris, sécurité manifestation , protection vitrine paris">
     
-    <!-- Open Graph (Pour le partage sur les réseaux sociaux) -->
+    <!-- Open Graph -->
     <meta property="og:title" content="PROCHAINE MANIF : ON PROTÈGE VOTRE BOUTIQUE !">
     <meta property="og:description" content="Agents de sécurité privée agréés. Garantie de remboursement en cas de vol ou dégradation. La police est débordée, nous prenons le relais.">
+    <meta property="og:image" content="https://securityparis-x.vercel.app/image.png">
     <meta property="og:type" content="website">
 
-    <!-- Google Fonts pour un style percutant -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -86,6 +87,7 @@
             border-radius: 5px;
             text-transform: uppercase;
             transition: background 0.3s;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
         }
 
         .header-cta:hover {
@@ -95,11 +97,10 @@
         /* --- HERO SECTION --- */
         .hero {
             position: relative;
-            padding: 80px 20px;
+            padding: 60px 20px;
             text-align: center;
-            /* Remplacement par un dégradé sombre pour imiter l'ambiance de l'image */
-            background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.9)), 
-                        url('https://images.unsplash.com/photo-1590075588163-12758e5b2b46?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            /* Dégradé sombre pour faire ressortir l'image et le texte */
+            background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.95));
             border-bottom: 3px solid var(--primary-red);
         }
 
@@ -113,16 +114,6 @@
             color: var(--primary-red);
         }
 
-        .hero .date-box {
-            font-size: 5rem;
-            font-family: 'Oswald', sans-serif;
-            font-weight: 700;
-            color: white;
-            text-shadow: 0 0 20px var(--primary-red);
-            margin: 10px 0;
-            font-style: italic;
-        }
-
         .hero h2 {
             font-size: 2rem;
             background-color: white;
@@ -131,6 +122,23 @@
             padding: 5px 20px;
             transform: skewX(-10deg);
             margin-bottom: 30px;
+        }
+
+        /* --- IMAGE DE L'AFFICHE --- */
+        .hero-poster-container {
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            padding: 5px;
+            background: linear-gradient(45deg, var(--primary-red), var(--dark-red));
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+        }
+
+        .hero-poster {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
         }
 
         .hero p {
@@ -277,7 +285,7 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
-            background-color: #0088cc; /* Couleur Telegram */
+            background-color: #0088cc;
             color: white;
             text-decoration: none;
             padding: 15px 30px;
@@ -319,7 +327,6 @@
         /* --- RESPONSIVE --- */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
-            .hero .date-box { font-size: 3.5rem; }
             .hero h2 { font-size: 1.2rem; }
             .cta-button { font-size: 1.2rem; padding: 15px 30px; }
             .guarantee h2 { font-size: 1.8rem; }
@@ -333,16 +340,24 @@
     <!-- HEADER -->
     <header>
         <a href="#" class="logo">SECURITIX<span>PARIS</span></a>
-        <a href="#contact" class="header-cta">Réserver un agent</a>
+        <!-- REDIRECTION DIRECTE TELEGRAM -->
+        <a href="https://t.me/Securitixparis" target="_blank" class="header-cta">Réserver un agent</a>
     </header>
 
     <!-- HERO SECTION -->
     <section class="hero">
         <h1>PROCHAINE MANIF <span class="highlight-red"></span></h1>
-        <div class="date-box"></div>
         <h2>ON PROTÈGE VOTRE BOUTIQUE !</h2>
-        <p>La police est débordée et les compagnies de sécurité classiques sont bloquées par la loi. Nous prenons le relais avec des agents expérimentés pour sécuriser votre commerce contre les pillages et les dégradations.</p>
-        <a href="#contact" class="cta-button">Contactez-nous sur Telegram</a>
+        
+        <!-- INTÉGRATION DE VOTRE IMAGE ICI -->
+        <div class="hero-poster-container">
+            <img src="https://securityparis-x.vercel.app/image.png" alt="Sécurité Privée Protection Boutique Manifestation Paris 24" class="hero-poster">
+        </div>
+
+        <p>La police est débordée et les compagnies classiques sont bloquées par la loi. Nous prenons le relais avec des agents expérimentés pour sécuriser votre commerce contre les pillages et les dégradations.</p>
+        
+        <!-- REDIRECTION DIRECTE TELEGRAM -->
+        <a href="https://t.me/Securitixparis" target="_blank" class="cta-button">Réserver un agent maintenant</a>
     </section>
 
     <!-- URGENCY BANNER -->
@@ -387,7 +402,6 @@
         <p>La demande est très forte. Contactez-nous immédiatement sur Telegram pour sécuriser votre boutique avant qu'il ne soit trop tard.</p>
         
         <div class="telegram-container">
-            <!-- REMPLACEZ LES LIENS CI-DESSOUS PAR VOS LIENS TELEGRAM RÉELS -->
             <a href="https://t.me/Securitixparis" target="_blank" class="telegram-btn">
                 <i class="fab fa-telegram-plane"></i> @Securitixparis
             </a>
@@ -396,7 +410,7 @@
             </a>
         </div>
 
-        <p class="limited-text">⚠️ Places limitées</p>
+        <p class="limited-text">⚠️ Places limitées.</p>
     </section>
 
     <!-- FOOTER -->
